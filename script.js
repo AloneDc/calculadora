@@ -1,28 +1,23 @@
-// Función para agregar contenido a la pantalla
 function appendToDisplay(value) {
   const display = document.getElementById("display");
   display.value += value;
 }
 
-// Función para limpiar la pantalla
 function limpiarPantalla() {
   const display = document.getElementById("display");
   display.value = "";
 }
 
-// Función para eliminar el último carácter
 function eliminarUltimo() {
   const display = document.getElementById("display");
   display.value = display.value.slice(0, -1);
 }
 
-// Función para calcular el factorial
 function factorial(n) {
   if (n === 0 || n === 1) return 1;
   return n * factorial(n - 1);
 }
 
-// Función para calcular la expresión
 function calcular() {
   const display = document.getElementById("display");
   try {
